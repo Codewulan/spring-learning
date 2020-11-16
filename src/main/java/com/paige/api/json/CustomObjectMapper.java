@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import com.paige.api.util.StringUtil;
 
 
 public class CustomObjectMapper extends ObjectMapper {
@@ -32,7 +33,7 @@ public class CustomObjectMapper extends ObjectMapper {
             setPropertyNamingStrategy(PropertyNamingStrategy.CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES);
         }
         // 进行日期格式化
-        if (null != dateFormatPattern && !dateFormatPattern.isEmpty()) {
+        if (StringUtil.isNotEmpty(dateFormatPattern)) {
             DateFormat dateFormat = new SimpleDateFormat(dateFormatPattern);
             setDateFormat(dateFormat);
         }
