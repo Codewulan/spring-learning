@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.study</groupId>
-  <artifactId>spring-demo</artifactId>
+  <artifactId>spring-learning</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>spring-demo Maven Webapp</name>
+  <name>spring-learning Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -59,7 +59,7 @@
   </dependencies>
 
   <build>
-    <finalName>spring-demo</finalName>
+    <finalName>spring-learning</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
